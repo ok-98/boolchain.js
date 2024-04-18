@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     dts({
       include: ['lib'],
-      exclude: ['**/*.test.ts'],
+      exclude: ['**/*.test.ts', 'lib/util'],
     }),
   ],
   build: {

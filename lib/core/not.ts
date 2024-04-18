@@ -1,5 +1,6 @@
 import type { ParamArgs } from 'only-utils';
 import { BoolchainAsyncType, BoolchainType } from '../types';
+import { isFunction } from '../util/is-function';
 
 /**
  * Returns a new function that negates the result of the provided function.
@@ -10,7 +11,7 @@ import { BoolchainAsyncType, BoolchainType } from '../types';
  */
 export const not = <T extends BoolchainType<T>>(func: T | unknown): T =>
   ((...args: ParamArgs<T>[]) => {
-    if (typeof func === 'function') {
+    if (isFunction(func)) {
       return !func(...args);
     }
     return !func;
@@ -22,5 +23,12 @@ export const not = <T extends BoolchainType<T>>(func: T | unknown): T =>
  * @param {T} func - The original function to be wrapped.
  * @returns {T} - A new function that negates the result of the original function.
  */
-export const notAsync = <T extends BoolchainAsyncType<T>>(func: T): T =>
-  (async (...args: ParamArgs<T>[]) => !(await func(...args))) as T;
+export const notAsync = <T extends BoolchainAsyncType<T>>(
+  func: T | unknown,
+): T =>
+  (async (...args: ParamArgs<T>[]) => {
+    if (isFunction(func)) {
+      return await !func(...args);
+    }
+    return !func;
+  }) as T;

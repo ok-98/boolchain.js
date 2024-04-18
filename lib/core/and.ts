@@ -1,5 +1,6 @@
 import type { ArrayWithAtLeast2, ParamArgs } from 'only-utils';
 import { BoolchainAsyncType, BoolchainType } from '../types';
+import { isFunction } from '../util/is-function';
 
 /**
  * Combines multiple functions or boolean values into a single function that returns true
@@ -14,7 +15,7 @@ export const and = <T extends BoolchainType<any>>(
 ): T =>
   ((...args: ParamArgs<T>[]) => {
     for (const funcOrBool of funcs) {
-      if (typeof funcOrBool === 'function') {
+      if (isFunction(funcOrBool)) {
         if ((funcOrBool as T)(...args) === false) {
           return false;
         }
@@ -41,7 +42,7 @@ export const andAsync = <T extends BoolchainAsyncType<T>>(
 ): T =>
   (async (...args: ParamArgs<T>[]) => {
     for (const funcOrBool of funcs) {
-      if (typeof funcOrBool === 'function') {
+      if (isFunction(funcOrBool)) {
         if ((await (funcOrBool as T)(...args)) === false) {
           return false;
         }

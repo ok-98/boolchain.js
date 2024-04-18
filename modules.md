@@ -46,7 +46,7 @@ if all functions return true or all boolean values are true.
 
 #### Defined in
 
-[core/and.ts:12](https://github.com/kacper-olszanski/boolchain.js/blob/cca7c726b6dd3d7319c5387e40412e9999db9188/lib/core/and.ts#L12)
+[core/and.ts:13](https://github.com/kacper-olszanski/boolchain.js/blob/2055999ea2daa0382a745f244156d42524c18931/lib/core/and.ts#L13)
 
 ___
 
@@ -78,7 +78,7 @@ An asynchronous function that combines the provided functions or boolean values.
 
 #### Defined in
 
-[core/and.ts:39](https://github.com/kacper-olszanski/boolchain.js/blob/cca7c726b6dd3d7319c5387e40412e9999db9188/lib/core/and.ts#L39)
+[core/and.ts:40](https://github.com/kacper-olszanski/boolchain.js/blob/2055999ea2daa0382a745f244156d42524c18931/lib/core/and.ts#L40)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[core/nand.ts:6](https://github.com/kacper-olszanski/boolchain.js/blob/cca7c726b6dd3d7319c5387e40412e9999db9188/lib/core/nand.ts#L6)
+[core/nand.ts:6](https://github.com/kacper-olszanski/boolchain.js/blob/2055999ea2daa0382a745f244156d42524c18931/lib/core/nand.ts#L6)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[core/nand.ts:10](https://github.com/kacper-olszanski/boolchain.js/blob/cca7c726b6dd3d7319c5387e40412e9999db9188/lib/core/nand.ts#L10)
+[core/nand.ts:10](https://github.com/kacper-olszanski/boolchain.js/blob/2055999ea2daa0382a745f244156d42524c18931/lib/core/nand.ts#L10)
 
 ___
 
@@ -160,7 +160,7 @@ Returns a new function that negates the result of the provided function.
 
 #### Defined in
 
-[core/not.ts:11](https://github.com/kacper-olszanski/boolchain.js/blob/cca7c726b6dd3d7319c5387e40412e9999db9188/lib/core/not.ts#L11)
+[core/not.ts:12](https://github.com/kacper-olszanski/boolchain.js/blob/2055999ea2daa0382a745f244156d42524c18931/lib/core/not.ts#L12)
 
 ___
 
@@ -180,7 +180,7 @@ Wraps an asynchronous function and returns a new function that negates the resul
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `func` | `T` | The original function to be wrapped. |
+| `func` | `unknown` | The original function to be wrapped. |
 
 #### Returns
 
@@ -190,7 +190,7 @@ Wraps an asynchronous function and returns a new function that negates the resul
 
 #### Defined in
 
-[core/not.ts:25](https://github.com/kacper-olszanski/boolchain.js/blob/cca7c726b6dd3d7319c5387e40412e9999db9188/lib/core/not.ts#L25)
+[core/not.ts:26](https://github.com/kacper-olszanski/boolchain.js/blob/2055999ea2daa0382a745f244156d42524c18931/lib/core/not.ts#L26)
 
 ___
 
@@ -220,7 +220,7 @@ Combines multiple functions or boolean values into a single function that return
 
 #### Defined in
 
-[core/or.ts:11](https://github.com/kacper-olszanski/boolchain.js/blob/cca7c726b6dd3d7319c5387e40412e9999db9188/lib/core/or.ts#L11)
+[core/or.ts:12](https://github.com/kacper-olszanski/boolchain.js/blob/2055999ea2daa0382a745f244156d42524c18931/lib/core/or.ts#L12)
 
 ___
 
@@ -252,7 +252,7 @@ Otherwise, it returns `false`.
 
 #### Defined in
 
-[core/or.ts:38](https://github.com/kacper-olszanski/boolchain.js/blob/cca7c726b6dd3d7319c5387e40412e9999db9188/lib/core/or.ts#L38)
+[core/or.ts:39](https://github.com/kacper-olszanski/boolchain.js/blob/2055999ea2daa0382a745f244156d42524c18931/lib/core/or.ts#L39)
 
 ___
 
@@ -284,7 +284,7 @@ and false otherwise.
 
 #### Defined in
 
-[core/xor.ts:16](https://github.com/kacper-olszanski/boolchain.js/blob/cca7c726b6dd3d7319c5387e40412e9999db9188/lib/core/xor.ts#L16)
+[core/xor.ts:16](https://github.com/kacper-olszanski/boolchain.js/blob/2055999ea2daa0382a745f244156d42524c18931/lib/core/xor.ts#L16)
 
 ___
 
@@ -314,4 +314,4 @@ A new asynchronous function that performs the XOR operation on the results of th
 
 #### Defined in
 
-[core/xor.ts:27](https://github.com/kacper-olszanski/boolchain.js/blob/cca7c726b6dd3d7319c5387e40412e9999db9188/lib/core/xor.ts#L27)
+[core/xor.ts:27](https://github.com/kacper-olszanski/boolchain.js/blob/2055999ea2daa0382a745f244156d42524c18931/lib/core/xor.ts#L27)
