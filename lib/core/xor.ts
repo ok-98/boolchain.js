@@ -1,7 +1,8 @@
-import { ArrayWithAtLeast2, ParamArgs } from 'only-utils';
-import { and } from './and';
-import { not } from './not';
-import { or } from './or';
+import { ArrayWithAtLeast2 } from 'only-utils';
+import { BoolchainAsyncType, BoolchainType } from '../types';
+import { and, andAsync } from './and';
+import { not, notAsync } from './not';
+import { or, orAsync } from './or';
 
 /**
  * Performs an exclusive OR (XOR) operation on the provided functions.
@@ -12,6 +13,17 @@ import { or } from './or';
  * @param {...ArrayWithAtLeast2<T | unknown>} funcs - The functions to perform the XOR operation on.
  * @returns {T} - A new function that performs the XOR operation.
  */
-export const xor = <T extends (...args: (ParamArgs<T> | unknown)[]) => boolean>(
+export const xor = <T extends BoolchainType<T>>(
   ...funcs: ArrayWithAtLeast2<T | unknown>
 ): T => and(not(and(...funcs)), or(...funcs)) as T;
+
+/**
+ * Performs an exclusive OR (XOR) operation on the results of multiple asynchronous functions.
+ *
+ * @template T - The type of the asynchronous function.
+ * @param funcs - An array of asynchronous functions.
+ * @returns A new asynchronous function that performs the XOR operation on the results of the input functions.
+ */
+export const xorAsync = <T extends BoolchainAsyncType<T>>(
+  ...funcs: ArrayWithAtLeast2<T | unknown>
+): T => andAsync(notAsync(andAsync(...funcs)), orAsync(...funcs)) as T;
