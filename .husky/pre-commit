@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+#pnpm lint:fix
+pnpx pretty-quick --staged
+pnpm gen:docs
+git add ./README.md
+git add ./modules.md

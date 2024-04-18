@@ -1,0 +1,76 @@
+{
+  "name": "boolchain",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "main": "./dist/boolchain.umd.cjs",
+  "module": "./dist/boolchain.js",
+  "types": "./index.d.ts",
+  "exports": {
+    "types": "./index.d.ts",
+    "import": "./dist/boolchain.js",
+    "require": "./dist/boolchain.umd.cjs"
+  },
+  "author": {
+    "name": "Kacper Olszanski",
+    "email": "dev@rvtr.media",
+    "url": "https://github.com/kacper-olszanski/"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "util",
+    "utility",
+    "boolean",
+    "bool",
+    "chaining",
+    "modules",
+    "es",
+    "ts"
+  ],
+  "scripts": {
+    "build": "tsc --p ./tsconfig.build.json && vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "upi": "pnpm update --interactive",
+    "lint": "eslint . --ext ts",
+    "lint:fix": "eslint --fix .",
+    "test": "vitest",
+    "treecheck": "pnpm build && agadoo dist/main.js",
+    "cs": "pnpm changeset",
+    "cs:version": "pnpm cs version",
+    "release": "pnpm build && pnpm gen:docs && pnpm cs publish",
+    "gen:docs": "node ./tooling/gen-docs.cjs",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "@vitest/coverage-v8": "^1.5.0",
+    "agadoo": "^3.0.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "8.10.0",
+    "eslint-config-xo": "^0.44.0",
+    "eslint-config-xo-typescript": "^4.0.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^9.0.11",
+    "only-utils": "^0.3.5",
+    "prettier": "^3.2.5",
+    "prettier-eslint": "^16.3.0",
+    "pretty-quick": "^4.0.0",
+    "typedoc": "^0.25.13",
+    "typedoc-plugin-markdown": "^3.17.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.9",
+    "vite-plugin-dts": "^3.8.3",
+    "vitest": "^1.5.0"
+  }
+}
