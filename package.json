@@ -1,18 +1,22 @@
 {
   "name": "boolchain",
-  "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "type": "module",
+  "sideEffects": false,
+  "description": "Boolchain - chainable boolean functions",
   "files": [
-    "dist",
-    "index.d.ts"
+    "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kacper-olszanski/boolchain.js.git"
+  },
   "main": "./dist/boolchain.umd.cjs",
   "module": "./dist/boolchain.js",
-  "types": "./index.d.ts",
+  "types": "./boolchain.d.ts",
   "exports": {
-    "types": "./index.d.ts",
+    "types": "./boolchain.d.ts",
     "import": "./dist/boolchain.js",
     "require": "./dist/boolchain.umd.cjs"
   },
@@ -48,6 +52,9 @@
     "release": "pnpm build && pnpm gen:docs && pnpm cs publish",
     "gen:docs": "node ./tooling/gen-docs.cjs",
     "prepare": "husky"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",

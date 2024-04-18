@@ -1,12 +1,12 @@
-only-utils / [Exports](modules.md)
+boolchain / [Exports](modules.md)
 
-# only-utils
+# Boolchain.js
 
-**O**nly **N**ice **L**ean **Y**are **-** **UTILS**.
+**Boolchain** - chainable boolean functions.
 
 ---
 
-![NPM Version](https://img.shields.io/npm/v/only-utils) ![NPM Downloads](https://img.shields.io/npm/dt/only-utils) ![npm bundle size](https://img.shields.io/bundlephobia/min/only-utils) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/only-utils) ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/only-utils) ![NPM License](https://img.shields.io/npm/l/only-utils)
+![NPM Version](https://img.shields.io/npm/v/boolchain) ![NPM Downloads](https://img.shields.io/npm/dt/boolchain) ![npm bundle size](https://img.shields.io/bundlephobia/min/boolchain) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/boolchain) ![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/boolchain) ![NPM License](https://img.shields.io/npm/l/boolchain)
 
 ---
 
@@ -20,22 +20,18 @@ Install package:
 
 ```sh
 # npm
-npm install only-utils
+npm install boolchain
 
 # yarn
-yarn add only-utils
+yarn add boolchain
 
 # pnpm
-pnpm add only-utils
+pnpm add boolchain
 
 # bun
-bun install only-utils
+bun install boolchain
 ```
 
 <!-- DOCS -->
 
-## [Types](modules.md#type-aliases-1)
-
-## [Utils](modules.md#functions-1)
-
-## [Constants](modules.md#variables-1)
+## [Boolchain functions](modules.md#functions-1)
