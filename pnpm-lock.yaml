@@ -45,8 +45,8 @@ importers:
         specifier: ^9.0.11
         version: 9.0.11
       only-utils:
-        specifier: ^0.3.5
-        version: 0.3.5
+        specifier: ^0.3.7
+        version: 0.3.7
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -773,6 +773,10 @@ packages:
   better-path-resolve@1.0.0:
     resolution: {integrity: sha512-pbnl5XzGBdrFU/wT4jqmJVPn2B6UHPBOhzMQkY/SPUPB6QtUXtmBHBIwCbXJol93mOpGMnQyP/+BB19q04xj7g==}
     engines: {node: '>=4'}
+
+  boolchain@0.1.1:
+    resolution: {integrity: sha512-W34RSAhx5yJguVf86CZjhAkrvXeZ61IMMORgj+jXYUXb6cp7w8+zn8zLMBViNB1TEk4WQ/BYKLNRK+Kn9I0KYA==}
+    engines: {node: '>=18'}
 
   brace-expansion@1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
@@ -1711,8 +1715,8 @@ packages:
     resolution: {integrity: sha512-1FlR+gjXK7X+AsAHso35MnyN5KqGwJRi/31ft6x0M194ht7S+rWAvd7PHss9xSKMzE0asv1pyIHaJYq+BbacAQ==}
     engines: {node: '>=12'}
 
-  only-utils@0.3.5:
-    resolution: {integrity: sha512-t+PfDNLqmG+M7KFh4Ftm1EKvNVOUncDOoMlwREhHRul/bYy63B9fOiJ+x8v5t/t4GvDkyXcTs1AjMJhr7AgrwA==}
+  only-utils@0.3.7:
+    resolution: {integrity: sha512-m1qXEuXoJM0/R4ryVt7JN8J9zdOOIrEwIlC9kKT5xc7u6H8O70bySRmq9QXH8tBymVrxUtYfWq32ZuSvXZ34vw==}
     engines: {node: '>=18'}
 
   optionator@0.9.3:
@@ -3261,6 +3265,8 @@ snapshots:
     dependencies:
       is-windows: 1.0.2
 
+  boolchain@0.1.1: {}
+
   brace-expansion@1.1.11:
     dependencies:
       balanced-match: 1.0.2
@@ -4287,7 +4293,9 @@ snapshots:
     dependencies:
       mimic-fn: 4.0.0
 
-  only-utils@0.3.5: {}
+  only-utils@0.3.7:
+    dependencies:
+      boolchain: 0.1.1
 
   optionator@0.9.3:
     dependencies:

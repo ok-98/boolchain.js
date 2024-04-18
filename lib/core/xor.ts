@@ -1,8 +1,8 @@
 import { ArrayWithAtLeast2 } from 'only-utils';
-import { BoolchainAsyncType, BoolchainType } from '../types';
-import { and, andAsync } from './and';
-import { not, notAsync } from './not';
-import { or, orAsync } from './or';
+import { BoolchainAsyncType, BoolchainType } from '../types/index.js';
+import { and, andAsync } from './and.js';
+import { not, notAsync } from './not.js';
+import { or, orAsync } from './or.js';
 
 /**
  * Performs an exclusive OR (XOR) operation on the provided functions.

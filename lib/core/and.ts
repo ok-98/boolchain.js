@@ -1,6 +1,6 @@
 import type { ArrayWithAtLeast2, ParamArgs } from 'only-utils';
-import { BoolchainAsyncType, BoolchainType } from '../types';
-import { isFunction } from '../util/is-function';
+import { BoolchainAsyncType, BoolchainType } from '../types/index.js';
+import { isFunction } from '../util/is-function.js';
 
 /**
  * Combines multiple functions or boolean values into a single function that returns true

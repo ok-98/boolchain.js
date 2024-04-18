@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import { and } from './and';
-import { not } from './not';
-import { or } from './or';
-import { xor } from './xor';
+import { and } from './and.js';
+import { not } from './not.js';
+import { or } from './or.js';
+import { xor } from './xor.js';
 
 describe('function-utils', () => {
   describe('not', () => {

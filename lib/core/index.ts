@@ -1,5 +1,5 @@
-export { and, andAsync } from './and';
-export { nand, nandAsync } from './nand';
-export { not, notAsync } from './not';
-export { or, orAsync } from './or';
-export { xor, xorAsync } from './xor';
+export { and, andAsync } from './and.js';
+export { nand, nandAsync } from './nand.js';
+export { not, notAsync } from './not.js';
+export { or, orAsync } from './or.js';
+export { xor, xorAsync } from './xor.js';

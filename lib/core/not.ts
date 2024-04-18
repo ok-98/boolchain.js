@@ -1,6 +1,6 @@
 import type { ParamArgs } from 'only-utils';
-import { BoolchainAsyncType, BoolchainType } from '../types';
-import { isFunction } from '../util/is-function';
+import { BoolchainAsyncType, BoolchainType } from '../types/index.js';
+import { isFunction } from '../util/is-function.js';
 
 /**
  * Returns a new function that negates the result of the provided function.

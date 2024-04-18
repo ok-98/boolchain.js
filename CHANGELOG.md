@@ -1,5 +1,11 @@
 # boolchain
 
+## 0.2.0
+
+### Minor Changes
+
+- updated to nodenext
+
 ## 0.1.1
 
 ### Patch Changes

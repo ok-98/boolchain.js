@@ -15,5 +15,10 @@ export default defineConfig({
       name: 'boolchain',
       fileName: 'boolchain',
     },
+    rollupOptions: {
+      output: {
+        exports: 'named',
+      },
+    },
   },
 });
