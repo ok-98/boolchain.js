@@ -1,5 +1,11 @@
 # boolchain
 
+## 0.2.2
+
+### Patch Changes
+
+- package json type fix
+
 ## 0.2.0
 
 ### Minor Changes
