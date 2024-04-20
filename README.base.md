@@ -31,5 +31,3 @@ bun install boolchain
 ```
 
 <!-- DOCS -->
-
-## [Boolchain functions](modules.md#functions-1)
