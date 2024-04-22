@@ -32,11 +32,16 @@ bun install boolchain
 
 ## Table of contents
 
+### References
+
+- [chain](modules.md#chain)
+
 
 ### Functions
 
 - [and](modules.md#and)
 - [andAsync](modules.md#andasync)
+- [boolchain](modules.md#boolchain)
 - [nand](modules.md#nand)
 - [nandAsync](modules.md#nandasync)
 - [not](modules.md#not)
@@ -45,6 +50,12 @@ bun install boolchain
 - [orAsync](modules.md#orasync)
 - [xor](modules.md#xor)
 - [xorAsync](modules.md#xorasync)
+
+## References
+
+### chain
+
+Renames and re-exports [boolchain](modules.md#boolchain)
 
 ## Functions
 
@@ -75,7 +86,7 @@ if all functions return true or all boolean values are true.
 
 #### Defined in
 
-[core/and.ts:13](https://github.com/kacper-olszanski/boolchain.js/blob/bb39cbec8b7b828718b5acc8152fa32283086861/lib/core/and.ts#L13)
+[core/and.ts:13](https://github.com/kacper-olszanski/boolchain.js/blob/d3e0456f7a1e08e062929a9f470feef372ac3d18/lib/core/and.ts#L13)
 
 ___
 
@@ -107,7 +118,31 @@ An asynchronous function that combines the provided functions or boolean values.
 
 #### Defined in
 
-[core/and.ts:40](https://github.com/kacper-olszanski/boolchain.js/blob/bb39cbec8b7b828718b5acc8152fa32283086861/lib/core/and.ts#L40)
+[core/and.ts:40](https://github.com/kacper-olszanski/boolchain.js/blob/d3e0456f7a1e08e062929a9f470feef372ac3d18/lib/core/and.ts#L40)
+
+___
+
+### boolchain
+
+▸ **boolchain**(`value?`): `ChainOfBool`
+
+Creates a chain object that allows chaining boolean operations.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `value?` | `ChainOfBoolInputValue` | The initial value for the chain. |
+
+#### Returns
+
+`ChainOfBool`
+
+A chain object with methods for performing boolean operations.
+
+#### Defined in
+
+[core/chain.ts:54](https://github.com/kacper-olszanski/boolchain.js/blob/d3e0456f7a1e08e062929a9f470feef372ac3d18/lib/core/chain.ts#L54)
 
 ___
 
@@ -133,7 +168,7 @@ ___
 
 #### Defined in
 
-[core/nand.ts:6](https://github.com/kacper-olszanski/boolchain.js/blob/bb39cbec8b7b828718b5acc8152fa32283086861/lib/core/nand.ts#L6)
+[core/nand.ts:6](https://github.com/kacper-olszanski/boolchain.js/blob/d3e0456f7a1e08e062929a9f470feef372ac3d18/lib/core/nand.ts#L6)
 
 ___
 
@@ -159,7 +194,7 @@ ___
 
 #### Defined in
 
-[core/nand.ts:10](https://github.com/kacper-olszanski/boolchain.js/blob/bb39cbec8b7b828718b5acc8152fa32283086861/lib/core/nand.ts#L10)
+[core/nand.ts:10](https://github.com/kacper-olszanski/boolchain.js/blob/d3e0456f7a1e08e062929a9f470feef372ac3d18/lib/core/nand.ts#L10)
 
 ___
 
@@ -189,7 +224,7 @@ Returns a new function that negates the result of the provided function.
 
 #### Defined in
 
-[core/not.ts:12](https://github.com/kacper-olszanski/boolchain.js/blob/bb39cbec8b7b828718b5acc8152fa32283086861/lib/core/not.ts#L12)
+[core/not.ts:12](https://github.com/kacper-olszanski/boolchain.js/blob/d3e0456f7a1e08e062929a9f470feef372ac3d18/lib/core/not.ts#L12)
 
 ___
 
@@ -219,7 +254,7 @@ Wraps an asynchronous function and returns a new function that negates the resul
 
 #### Defined in
 
-[core/not.ts:26](https://github.com/kacper-olszanski/boolchain.js/blob/bb39cbec8b7b828718b5acc8152fa32283086861/lib/core/not.ts#L26)
+[core/not.ts:26](https://github.com/kacper-olszanski/boolchain.js/blob/d3e0456f7a1e08e062929a9f470feef372ac3d18/lib/core/not.ts#L26)
 
 ___
 
@@ -249,7 +284,7 @@ Combines multiple functions or boolean values into a single function that return
 
 #### Defined in
 
-[core/or.ts:12](https://github.com/kacper-olszanski/boolchain.js/blob/bb39cbec8b7b828718b5acc8152fa32283086861/lib/core/or.ts#L12)
+[core/or.ts:12](https://github.com/kacper-olszanski/boolchain.js/blob/d3e0456f7a1e08e062929a9f470feef372ac3d18/lib/core/or.ts#L12)
 
 ___
 
@@ -281,7 +316,7 @@ Otherwise, it returns `false`.
 
 #### Defined in
 
-[core/or.ts:39](https://github.com/kacper-olszanski/boolchain.js/blob/bb39cbec8b7b828718b5acc8152fa32283086861/lib/core/or.ts#L39)
+[core/or.ts:39](https://github.com/kacper-olszanski/boolchain.js/blob/d3e0456f7a1e08e062929a9f470feef372ac3d18/lib/core/or.ts#L39)
 
 ___
 
@@ -313,7 +348,7 @@ and false otherwise.
 
 #### Defined in
 
-[core/xor.ts:16](https://github.com/kacper-olszanski/boolchain.js/blob/bb39cbec8b7b828718b5acc8152fa32283086861/lib/core/xor.ts#L16)
+[core/xor.ts:16](https://github.com/kacper-olszanski/boolchain.js/blob/d3e0456f7a1e08e062929a9f470feef372ac3d18/lib/core/xor.ts#L16)
 
 ___
 
@@ -343,5 +378,5 @@ A new asynchronous function that performs the XOR operation on the results of th
 
 #### Defined in
 
-[core/xor.ts:27](https://github.com/kacper-olszanski/boolchain.js/blob/bb39cbec8b7b828718b5acc8152fa32283086861/lib/core/xor.ts#L27)
+[core/xor.ts:27](https://github.com/kacper-olszanski/boolchain.js/blob/d3e0456f7a1e08e062929a9f470feef372ac3d18/lib/core/xor.ts#L27)
 

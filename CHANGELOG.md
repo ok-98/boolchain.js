@@ -1,5 +1,17 @@
 # boolchain
 
+## 0.3.0
+
+### Minor Changes
+
+- added "chain" function to chain booleans
+
+## 0.2.6
+
+### Patch Changes
+
+- bb39cbe: improved readme
+
 ## 0.2.2
 
 ### Patch Changes

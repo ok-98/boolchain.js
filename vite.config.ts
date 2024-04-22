@@ -2,6 +2,8 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 
+const name = 'boolchain';
+
 export default defineConfig({
   plugins: [
     dts({
@@ -11,13 +13,15 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: [resolve(__dirname, 'lib/core/index.ts')],
-      name: 'boolchain',
-      fileName: 'boolchain',
+      entry: [resolve(__dirname, 'lib/boolchain.ts')],
+      name,
+      fileName: (format) =>
+        format === 'es' ? `${name}.js` : `${name}.${format}.js`,
     },
     rollupOptions: {
       output: {
         exports: 'named',
+        name,
       },
     },
   },
