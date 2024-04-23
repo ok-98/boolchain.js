@@ -1,6 +1,6 @@
 {
   "name": "boolchain",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -16,10 +16,16 @@
   "module": "./dist/boolchain.js",
   "types": "./dist/boolchain.d.ts",
   "exports": {
-    "types": "./dist/boolchain.d.ts",
-    "import": "./dist/boolchain.js",
-    "require": "./dist/boolchain.umd.js",
-    "default": "./dist/boolchain.umd.js"
+    ".": {
+      "types": "./dist/boolchain.d.ts",
+      "import": "./dist/boolchain.js",
+      "require": "./dist/boolchain.umd.js"
+    },
+    "./nodeps": {
+      "types": "./dist/boolchain.d.ts",
+      "import": "./dist/boolchain.nodeps.js",
+      "require": "./dist/boolchain.nodeps.umd.js"
+    }
   },
   "author": {
     "name": "Kacper Olszanski",
@@ -40,7 +46,10 @@
     "ts"
   ],
   "scripts": {
-    "build": "tsc --p ./tsconfig.build.json && vite build",
+    "build": "pnpm build:ts && pnpm build:vite && pnpm build:vite:nodeps",
+    "build:ts": "tsc --p ./tsconfig.build.json",
+    "build:vite": "vite build",
+    "build:vite:nodeps": "vite -c=./vite-no-deps.config.ts build",
     "dev": "vite",
     "preview": "vite preview",
     "upi": "pnpm update --interactive",
@@ -57,9 +66,9 @@
   "engines": {
     "node": ">=18"
   },
-  "dependencies": {
-    "only-utils": "^0.4.5",
-    "better-optional": "^1.0.1"
+  "peerDependencies": {
+    "only-utils": ">=0.4.7",
+    "better-optional": ">=1.0.1"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
