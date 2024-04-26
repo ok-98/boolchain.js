@@ -1,5 +1,11 @@
 # boolchain
 
+## 0.3.2
+
+### Patch Changes
+
+- updated dependencies
+
 ## 0.3.0
 
 ### Minor Changes

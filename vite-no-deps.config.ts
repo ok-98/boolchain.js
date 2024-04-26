@@ -13,7 +13,7 @@ export default defineConfig({
     },
     emptyOutDir: false,
     rollupOptions: {
-      external: ['better-optional', 'only-utils'],
+      external: ['better-optional', 'only-utils', 'errors-es'],
 
       output: {
         globals: {
