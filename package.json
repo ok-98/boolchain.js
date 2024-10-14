@@ -1,6 +1,6 @@
 {
   "name": "boolchain",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -64,9 +64,9 @@
   "engines": {
     "node": ">=18"
   },
-  "peerDependencies": {
-    "better-optional": "npm:@jsr/ok98__optional@>=1.1.2 || >=1.1.2",
-    "only-utils": "npm:@jsr/only__utils@>=0.6.0 || >=0.6.0"
+  "dependencies": {
+    "@only/utils": "npm:@jsr/only__utils@^0.6.0",
+    "@ok98/optional": "npm:@jsr/ok98__optional@^1.1.2"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",

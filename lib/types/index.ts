@@ -1,10 +1,23 @@
-import { OptionalValue } from 'better-optional';
+import { OptionalValue } from '@ok98/optional';
 import type { NotPromise, ParamArgs, TOrUndefined } from '@only/types';
 
+/**
+ * Represents a type for a function that takes parameters of type `ParamArgs<T>` or `unknown`
+ * and returns a boolean value.
+ *
+ * @template T - A function type that takes parameters of type `ParamArgs<T>` or `unknown`
+ *               and returns a non-promise boolean value.
+ */
 export type BoolchainType<
   T extends (...args: (ParamArgs<T> | unknown)[]) => NotPromise<boolean>,
 > = (...args: (ParamArgs<T> | unknown)[]) => boolean;
 
+/**
+ * A type alias for an asynchronous function that takes parameters of type `ParamArgs<T>` or `unknown`
+ * and returns a `Promise<boolean>`.
+ *
+ * @template T - A function type that takes parameters of type `ParamArgs<T>` or `unknown` and returns a `Promise<boolean>`.
+ */
 export type BoolchainAsyncType<
   T extends (...args: (ParamArgs<T> | unknown)[]) => Promise<boolean>,
 > = (...args: (ParamArgs<T> | unknown)[]) => Promise<boolean>;
