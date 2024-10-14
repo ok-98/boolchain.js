@@ -65,7 +65,7 @@
     "node": ">=18"
   },
   "peerDependencies": {
-    "better-optional": "npm:@jsr/ok98__optional@>=1.1.1 || >=1.1.0",
+    "better-optional": "npm:@jsr/ok98__optional@>=1.1.2 || >=1.1.2",
     "only-utils": "npm:@jsr/only__utils@>=0.6.0 || >=0.6.0"
   },
   "devDependencies": {

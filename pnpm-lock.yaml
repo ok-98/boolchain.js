@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       better-optional:
-        specifier: npm:@jsr/ok98__optional@>=1.1.1 || >=1.1.0
-        version: '@jsr/ok98__optional@1.1.1'
+        specifier: npm:@jsr/ok98__optional@>=1.1.2 || >=1.1.2
+        version: '@jsr/ok98__optional@1.1.2'
       only-utils:
         specifier: npm:@jsr/only__utils@>=0.6.0 || >=0.6.0
         version: '@jsr/only__utils@0.6.0(@jsr/only__utils@0.6.0)(errors-es@0.1.3)'
@@ -385,8 +385,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@jsr/ok98__optional@1.1.1':
-    resolution: {integrity: sha512-MHYwSBtchmjePw9n4AYm+71Lj0Mc4pNNL8X6anS+524oFyyWZlDDoZEagTonA2m01NFgFpupR6p/g+HYGUfa4Q==, tarball: https://npm.jsr.io/~/11/@jsr/ok98__optional/1.1.1.tgz}
+  '@jsr/ok98__optional@1.1.2':
+    resolution: {integrity: sha512-FtyYrKSQLM1GzUymfeKef9skXSQsS3jm3m3/kUs5ONgxdHJV5k4zAc3vPWAOa+d0gaN+jScPhd5jvZEupcw0RQ==, tarball: https://npm.jsr.io/~/11/@jsr/ok98__optional/1.1.2.tgz}
 
   '@jsr/only__types@0.1.0':
     resolution: {integrity: sha512-rma0y+aEaZ7rpi+6oVPJnChmH4JPgl37NnHgomNN5Hf0Y2zSlfIGXv3nYgZaZ8wS8zLA5ovZf78/hA9k5v+RnQ==, tarball: https://npm.jsr.io/~/11/@jsr/only__types/0.1.0.tgz}
@@ -2824,7 +2824,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@jsr/ok98__optional@1.1.1':
+  '@jsr/ok98__optional@1.1.2':
     dependencies:
       '@jsr/only__types': 0.1.0
 
