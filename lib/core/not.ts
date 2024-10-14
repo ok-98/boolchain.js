@@ -1,4 +1,4 @@
-import type { ParamArgs } from 'only-utils';
+import type { ParamArgs } from 'only-types';
 import { BoolchainAsyncType, BoolchainType } from '../types/index.js';
 import { isFunction } from '../util/is-function.js';
 

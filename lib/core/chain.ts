@@ -1,5 +1,6 @@
 import { Optional, OptionalValue } from 'better-optional';
-import { isBoolean, SimpleFunction, transformIfDefined } from 'only-utils';
+import { isBoolean, transformIfDefined } from 'only-utils';
+import type { SimpleFunction } from 'only-types';
 import { ChainOfBool, ChainOfBoolInputValue } from '../types/index.ts';
 import { isFunction } from '../util/is-function.ts';
 import { or } from './or.ts';
