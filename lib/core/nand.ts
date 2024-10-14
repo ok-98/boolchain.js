@@ -1,4 +1,4 @@
-import type { ArrayWithAtLeast2 } from 'only-types';
+import type { ArrayWithAtLeast2 } from '@only/types';
 import { BoolchainAsyncType, BoolchainType } from '../types/index.js';
 import { and, andAsync } from './and.js';
 import { not, notAsync } from './not.js';

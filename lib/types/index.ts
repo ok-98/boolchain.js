@@ -1,5 +1,5 @@
 import { OptionalValue } from 'better-optional';
-import { NotPromise, ParamArgs, TOrUndefined } from 'only-types';
+import type { NotPromise, ParamArgs, TOrUndefined } from '@only/types';
 
 export type BoolchainType<
   T extends (...args: (ParamArgs<T> | unknown)[]) => NotPromise<boolean>,
