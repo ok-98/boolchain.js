@@ -13,12 +13,11 @@ export default defineConfig({
     },
     emptyOutDir: false,
     rollupOptions: {
-      external: ['better-optional', 'only-utils', 'errors-es'],
+      external: ['@only/utils'],
 
       output: {
         globals: {
-          'only-utils': 'onlyUtils',
-          'better-optional': 'Optional',
+          '@only/utils': 'onlyUtils',
         },
         exports: 'named',
         name,

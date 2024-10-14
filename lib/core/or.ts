@@ -46,7 +46,7 @@ export const orAsync = <T extends BoolchainAsyncType<T>>(
           return true;
         }
       } else {
-        if (!!funcOrBool) {
+        if (funcOrBool) {
           return true;
         }
       }
