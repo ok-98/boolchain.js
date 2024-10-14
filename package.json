@@ -1,6 +1,6 @@
 {
   "name": "boolchain",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -92,5 +92,15 @@
     "vite-plugin-dts": "^3.9.0",
     "@only/types": "npm:@jsr/only__types@^0.1.0",
     "vitest": "^1.6.0"
+  },
+  "overrides": {
+    "@only/utils": {
+      "dependencies": {
+        "@only/utils": {
+          "boolchain": "*",
+          "better-optional": "*"
+        }
+      }
+    }
   }
 }
