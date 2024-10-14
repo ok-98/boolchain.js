@@ -17,12 +17,10 @@
   "types": "./dist/boolchain.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/boolchain.d.ts",
       "import": "./dist/boolchain.js",
       "require": "./dist/boolchain.umd.js"
     },
     "./nodeps": {
-      "types": "./dist/boolchain.d.ts",
       "import": "./dist/boolchain.nodeps.js",
       "require": "./dist/boolchain.nodeps.umd.js"
     }
