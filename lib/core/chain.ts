@@ -31,28 +31,6 @@ const inputValueToOptional = (value?: _InputValue): OptionalValue<boolean> =>
  *
  * @param value - The initial value to start the chain. It can be a boolean or a function returning a boolean.
  * @returns An object representing the chainable boolean value with methods for logical operations.
- *
- * @method and - Performs a logical AND operation with the next value and returns a new chain.
- * @param nextValue - The value to perform the AND operation with. It can be a boolean or a function returning a boolean.
- * @returns A new chain with the result of the AND operation.
- *
- * @method or - Performs a logical OR operation with the next value and returns a new chain.
- * @param nextValue - The value to perform the OR operation with. It can be a boolean or a function returning a boolean.
- * @returns A new chain with the result of the OR operation.
- *
- * @method get - Retrieves the current boolean value of the chain.
- * @returns The current boolean value.
- *
- * @method getOptional - Retrieves the current value of the chain wrapped in an OptionalValue.
- * @returns The current value wrapped in an OptionalValue.
- *
- * @method filter - Filters the current value based on a predicate function.
- * @param predicate - A function that takes the current boolean value and returns a boolean.
- * @returns The filtered value wrapped in an OptionalValue.
- *
- * @method map - Maps the current boolean value to another value using a mapper function.
- * @param mapper - A function that takes the current boolean value and returns a new value.
- * @returns The mapped value.
  */
 const _chain = (value?: _InputValue): ChainOfBool => {
   let currentState: OptionalValue<boolean> = inputValueToOptional(value);
