@@ -1,5 +1,11 @@
 # boolchain
 
+## 0.5.0
+
+### Minor Changes
+
+- removed jsr
+
 ## 0.4.1
 
 ### Patch Changes

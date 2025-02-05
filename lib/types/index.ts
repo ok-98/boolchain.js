@@ -1,5 +1,5 @@
-import { OptionalValue } from '@ok98/optional';
-import type { NotPromise, ParamArgs, TOrUndefined } from '@only/types';
+import { OptionalValue } from 'better-optional';
+import type { NotPromise, ParamArgs, TOrUndefined } from 'only-types';
 
 /**
  * Represents a type for a function that takes parameters of type `ParamArgs<T>` or `unknown`

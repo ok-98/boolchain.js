@@ -1,6 +1,6 @@
-import { Optional, OptionalValue } from '@ok98/optional';
-import { isBoolean, transformIfDefined } from '@only/utils';
-import type { SimpleFunction } from '@only/types';
+import { Optional, OptionalValue } from 'better-optional';
+import { isBoolean, transformIfDefined } from 'only-utils';
+import type { SimpleFunction } from 'only-types';
 import { ChainOfBool, ChainOfBoolInputValue } from '../types/index.ts';
 import { isFunction } from '../util/is-function.ts';
 import { or } from './or.ts';
@@ -20,7 +20,7 @@ type _InputValue = ChainOfBoolInputValue | OptionalValue<boolean>;
  *          or an empty optional if the input value is undefined.
  */
 const inputValueToOptional = (value?: _InputValue): OptionalValue<boolean> =>
-  transformIfDefined(value, (v) =>
+  transformIfDefined<_InputValue, boolean>(value, (v: _InputValue) =>
     or(isBoolean, isFunction)(v)
       ? Optional.of(booleanOrFunctionToBoolean(v as ChainOfBoolInputValue))
       : (value as unknown as OptionalValue<boolean>),

@@ -3,5 +3,3 @@
 
 #pnpm lint:fix
 pnpx pretty-quick --staged
-pnpm gen:docs
-git add ./README.md
