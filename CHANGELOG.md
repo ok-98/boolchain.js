@@ -1,5 +1,11 @@
 # boolchain
 
+## 0.5.1
+
+### Patch Changes
+
+- type updates
+
 ## 0.5.0
 
 ### Minor Changes

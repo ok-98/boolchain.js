@@ -1,6 +1,6 @@
 {
   "name": "boolchain",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -62,39 +62,40 @@
     "prepare": "husky"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "dependencies": {
-    "better-optional": "^1.2.0",
+    "better-optional": "^1.2.1",
     "only-utils": "^0.6.1"
   },
   "peerDependencies": {
+    "better-optional": ">=1.2.1",
     "only-utils": ">=0.6.1",
-    "better-optional": ">=1.2.0"
+    "only-types": ">=1.0.1"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.9",
-    "@types/node": "^20.16.11",
+    "@changesets/cli": "^2.27.12",
+    "@types/node": "^22.13.1",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
-    "@vitest/coverage-v8": "^1.6.0",
+    "@vitest/coverage-v8": "^3.0.5",
     "agadoo": "^3.0.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "8.10.0",
     "eslint-config-xo": "^0.44.0",
     "eslint-config-xo-typescript": "^4.0.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "husky": "^9.1.6",
-    "only-types": "^0.1.0",
-    "prettier": "^3.3.3",
+    "eslint-plugin-prettier": "^5.2.3",
+    "husky": "^9.1.7",
+    "only-types": "^1.0.1",
+    "prettier": "^3.4.2",
     "prettier-eslint": "^16.3.0",
     "pretty-quick": "^4.0.0",
     "typedoc": "^0.25.13",
-    "typedoc-plugin-markdown": "^4.2.9",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.9",
-    "vite-plugin-dts": "^3.9.1",
-    "vitest": "^1.6.0"
+    "typedoc-plugin-markdown": "^4.4.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "vite-plugin-dts": "^4.5.0",
+    "vitest": "^3.0.5"
   },
   "overrides": {
     "only-utils": {
